@@ -111,7 +111,7 @@ export const projectsData: Project[] = [
       'An enterprise resource planning (ERP) system designed for PT Alfa Electra Indonesia to streamline end-to-end manufacturing, supply chain management, procurement, and project monitoring.',
     image: '/images/porto3.png',
     tech: ['React.js', 'Vite', 'Tailwind CSS', 'JavaScript', 'REST API'],
-    link: 'https://github.com/nandarevan/Portfolio-revan',
+    link: 'https://www.alfaelectra.co.id/',
   },
   {
     id: 4,
