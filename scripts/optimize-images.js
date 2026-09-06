@@ -6,9 +6,11 @@ const imagesDir = 'public/images';
 
 const tasks = [
   { file: 'pt_rajawali.jpg', width: 600, type: 'jpeg', quality: 80 },
+  { file: 'porto3.png', width: 600, type: 'png', quality: 80 },
   { file: 'porto4.png', width: 600, type: 'png', quality: 80 },
   { file: 'porto6.png', width: 600, type: 'png', quality: 80 },
   { file: 'porto7.png', width: 600, type: 'png', quality: 80 },
+  { file: 'porto9.jpg', width: 600, type: 'jpeg', quality: 80 },
   { file: 'itpln1.jpg', width: 600, type: 'jpeg', quality: 80 },
   { file: 'logorevan_3.png', width: 150, type: 'png', quality: 85 },
   { file: 'google.png', width: 100, type: 'png', quality: 85 },

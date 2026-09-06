@@ -51,7 +51,7 @@ export const aboutData = {
   name: 'Nanda Revan Saputro',
   title: 'AI & Full Stack Developer',
   paragraphs: [
-    "I'm a 20 years old Informatics Engineering student at Institut Teknologi PLN with a GPA of 3.96. Passionate about Artificial Intelligence and software development, I combine creativity and logic to craft impactful digital solutions that merge innovation and practicality.",
+    "I'm a 21 years old 7th-semester Informatics Engineering student at Institut Teknologi PLN with a GPA of 3.96. Passionate about Artificial Intelligence and software development, I combine creativity and logic to craft impactful digital solutions that merge innovation and practicality.",
     "Driven by curiosity and vision, I build intelligent systems, web platforms, and AI-powered solutions that bridge technology and creativity. My goal is to create systems that not only work but also inspire.",
   ],
   quote: '\u201CInnovation isn\u2019t luck. It\u2019s the result of focus, persistence, and curiosity.\u201D',
@@ -106,12 +106,12 @@ export const projectsData: Project[] = [
   },
   {
     id: 3,
-    title: 'First Experience With Golang',
+    title: 'Electra Integrated System (EIS)',
     description:
-      'A full-stack system combining the Go Gin framework and React for building efficient, scalable web architectures, with a focus on structured APIs and reactive front-end rendering.',
-    image: '/images/porto3.jpg',
-    tech: ['Go (Gin)', 'React', 'JavaScript'],
-    link: 'https://github.com/Ravenn19/Portofolio-Golang',
+      'An enterprise resource planning (ERP) system designed for PT Alfa Electra Indonesia to streamline end-to-end manufacturing, supply chain management, procurement, and project monitoring.',
+    image: '/images/porto3.png',
+    tech: ['React.js', 'Vite', 'Tailwind CSS', 'JavaScript', 'REST API'],
+    link: 'https://github.com/nandarevan/Portfolio-revan',
   },
   {
     id: 4,
@@ -120,7 +120,7 @@ export const projectsData: Project[] = [
       'A deep learning project that classifies room conditions as clean or messy using adaptive convolutional networks and TensorFlow pipelines optimized for visual inference.',
     image: '/images/porto4.png',
     tech: ['Python', 'TensorFlow', 'Machine Learning'],
-    link: 'https://github.com/Ravenn19/Clean-vs-Messy-Room',
+    link: 'https://github.com/nandarevan/Clean-vs-Messy-Room',
   },
   {
     id: 5,
@@ -129,7 +129,7 @@ export const projectsData: Project[] = [
       'Real-time facial recognition system using OpenCV and deep neural networks for automatic identity verification and access control solutions.',
     image: '/images/porto5.jpg',
     tech: ['Python', 'OpenCV', 'TensorFlow'],
-    link: 'https://github.com/Ravenn19/Face_Recognition_DeepFace',
+    link: 'https://github.com/nandarevan/Face_Recognition_DeepFace',
   },
   {
     id: 6,
@@ -138,7 +138,7 @@ export const projectsData: Project[] = [
       'A regression-based machine learning model predicting house prices based on area, location, and condition, built using Scikit-learn and Pandas.',
     image: '/images/porto6.png',
     tech: ['Python', 'Scikit-learn', 'Pandas'],
-    link: 'https://github.com/Ravenn19/Analyzed-customer-sales',
+    link: 'https://github.com/nandarevan/Analyzed-customer-sales',
   },
   {
     id: 7,
@@ -147,7 +147,16 @@ export const projectsData: Project[] = [
       'A mobile app providing Quran, Hadith, prayer times, and Qibla direction with Website Interface integration, ensuring speed, reliability, and clean user experience.',
     image: '/images/porto7.png',
     tech: ['Flutter', 'Firebase', 'REST API'],
-    link: 'https://github.com/Ravenn19/Islamic-Application',
+    link: 'https://github.com/nandarevan/Islamic-Application',
+  },
+  {
+    id: 8,
+    title: 'First Experience With Golang',
+    description:
+      'A full-stack system combining the Go Gin framework and React for building efficient, scalable web architectures, with a focus on structured APIs and reactive front-end rendering.',
+    image: '/images/porto9.jpg',
+    tech: ['Go (Gin)', 'React', 'JavaScript'],
+    link: 'https://github.com/nandarevan/Portofolio-Golang',
   },
 ];
 
@@ -266,7 +275,7 @@ export const socialLinks: SocialLink[] = [
   {
     name: 'GitHub',
     icon: 'Github',
-    href: 'https://github.com/Ravenn19',
+    href: 'https://github.com/nandarevan',
   },
   {
     name: 'Instagram',
@@ -335,23 +344,27 @@ export const carouselData = projectsData.map((p) => ({
       : p.id === 2
         ? 'A website for IT PLN\u2019s business collaboration platform, where I focused on developing the digital signature feature and related functionalities.'
         : p.id === 3
-          ? 'A Golang project using the Gin framework for the backend and React for the frontend.'
+          ? 'An enterprise ERP system for PT Alfa Electra Indonesia streamlining manufacturing, supply chain, and procurement.'
           : p.id === 4
             ? 'Machine learning model for real-time classification of clean and messy data.'
             : p.id === 5
               ? 'AI system for real-time face detection and recognition using computer vision.'
               : p.id === 6
                 ? 'A machine learning model that predicts house prices based on features like location, size, and condition.'
-                : 'A mobile application featuring Quran, Hadith, prayer times, and Qibla direction with a clean and user-friendly interface.',
+                : p.id === 7
+                  ? 'A mobile application featuring Quran, Hadith, prayer times, and Qibla direction with a clean and user-friendly interface.'
+                  : 'A full-stack system combining Go Gin framework and React for building scalable web architectures.',
   image: p.image,
   tech:
     p.id === 2
       ? ['PHP', 'JavaScript', 'SQL']
       : p.id === 3
-        ? ['Gin', 'Go', 'JavaScript', 'React']
+        ? ['React.js', 'Vite', 'Tailwind CSS', 'REST API']
         : p.id === 4
           ? ['Machine Learning', 'Python', 'Data Preprocessing']
-          : p.tech,
+          : p.id === 8
+            ? ['Gin', 'Go', 'JavaScript', 'React']
+            : p.tech,
 }));
 
 export const achievementsData: Achievement[] = [
