@@ -60,11 +60,19 @@ export const aboutData = {
 
 export const experienceData: Experience[] = [
   {
-    role: 'Full Stack Developer, Student Worker',
+    role: 'Full Stack Developer Intern',
     company: 'Institut Teknologi PLN',
-    duration: 'Dec 2025 – Present',
+    duration: 'Sep 2026 – Present',
     description:
-      'Worked as a Full Stack Developer at BUIB IT PLN, handling both frontend and backend development to support digital business initiatives. Built the STP ITPLN website using Laravel, improving digital presence, user engagement, and overall system performance.',
+      'Worked as a Full Stack Developer Intern at ITPLN, contributing to frontend and backend development using PHP and Laravel. Developed an ERP system using PHP to support business process management and improve internal operations.',
+    image: '/images/itpln.jpg',
+  },
+  {
+    role: 'Full Stack Developer - Student Worker',
+    company: 'Institut Teknologi PLN',
+    duration: 'Dec 2025 – Aug 2026',
+    description:
+      'Worked as a Full Stack Developer at ITPLN, handling both frontend and backend development tasks to support digital business initiatives. Designed and built the STP ITPLN website using Laravel, improving digital presence, user engagement, and overall system performance, as well as developing the Usahakerjasama website using Native PHP for business collaboration and information management purposes.',
     image: '/images/itpln1.jpg',
   },
   {
