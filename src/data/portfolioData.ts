@@ -65,7 +65,7 @@ export const experienceData: Experience[] = [
     duration: 'Sep 2026 – Present',
     description:
       'Worked as a Full Stack Developer Intern at ITPLN, contributing to frontend and backend development using PHP and Laravel. Developed an ERP system using PHP to support business process management and improve internal operations.',
-    image: '/images/itpln.jpg',
+    image: '/images/itpln1.jpg',
   },
   {
     role: 'Full Stack Developer - Student Worker',
