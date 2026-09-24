@@ -60,6 +60,14 @@ export const aboutData = {
 
 export const experienceData: Experience[] = [
   {
+    role: 'Frontend Developer',
+    company: 'PT. Alfa Electra Indonesia',
+    duration: 'Jul 2026 – Present',
+    description:
+      'Working as a Frontend Developer at PT Alfa Electra Indonesia, responsible for building and maintaining the Electra Integrated System (EIS) using React.js, Vite, and Tailwind CSS. Developing responsive user interfaces, integrating REST APIs, and streamlining enterprise operations across manufacturing, supply chain, and procurement.',
+    image: '/images/porto3.png',
+  },
+  {
     role: 'Full Stack Developer Intern',
     company: 'Institut Teknologi PLN',
     duration: 'Sep 2026 – Present',
