@@ -65,7 +65,7 @@ export const experienceData: Experience[] = [
     duration: 'Jul 2026 – Present',
     description:
       'Working as a Frontend Developer at PT Alfa Electra Indonesia, responsible for building and maintaining the Electra Integrated System (EIS) using React.js, Vite, and Tailwind CSS. Developing responsive user interfaces, integrating REST APIs, and streamlining enterprise operations across manufacturing, supply chain, and procurement.',
-    image: '/images/porto3.png',
+    image: '/images/alfaelectra.jpeg',
   },
   {
     role: 'Full Stack Developer Intern',

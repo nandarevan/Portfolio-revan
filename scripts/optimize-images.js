@@ -5,6 +5,7 @@ import path from 'path';
 const imagesDir = 'public/images';
 
 const tasks = [
+  { file: 'alfaelectra.jpeg', width: 600, type: 'jpeg', quality: 80 },
   { file: 'pt_rajawali.jpg', width: 600, type: 'jpeg', quality: 80 },
   { file: 'porto3.png', width: 600, type: 'png', quality: 80 },
   { file: 'porto4.png', width: 600, type: 'png', quality: 80 },
