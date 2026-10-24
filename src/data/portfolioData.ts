@@ -51,7 +51,7 @@ export const aboutData = {
   name: 'Nanda Revan Saputro',
   title: 'AI & Full Stack Developer',
   paragraphs: [
-    "I'm a 21 years old 7th semester Informatics Engineering student at Institut Teknologi PLN with a GPA of 3.96. Passionate about Artificial Intelligence and software development, I combine creativity and logic to craft impactful digital solutions that merge innovation and practicality.",
+    "I'm a 21 years old final year Informatics Engineering student at Institut Teknologi PLN with a GPA of 3.97. Passionate about Artificial Intelligence and software development, I combine creativity and logic to craft impactful digital solutions that merge innovation and practicality.",
     "Driven by curiosity and vision, I build intelligent systems, web platforms, and AI powered solutions that bridge technology and creativity. My goal is to create systems that not only work but also inspire.",
   ],
   quote: '\u201CInnovation isn\u2019t luck. It\u2019s the result of focus, persistence, and curiosity.\u201D',
