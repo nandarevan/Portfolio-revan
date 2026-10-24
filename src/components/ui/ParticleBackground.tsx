@@ -69,7 +69,7 @@ export default function ParticleBackground() {
         ctx.fillStyle = `rgba(96, 165, 250, ${p.opacity})`;
         ctx.fill();
 
-        // Fewer connection checks — only check next 3 particles
+        // Fewer connection checks: only check next 3 particles
         const limit = Math.min(i + 3, particles.length);
         for (let j = i + 1; j < limit; j++) {
           const dx = p.x - particles[j].x;

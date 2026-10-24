@@ -1,5 +1,5 @@
 export default function FloatingShapes() {
-  // Pure CSS animations — no Framer Motion overhead, no JS re-renders
+  // Pure CSS animations: no Framer Motion overhead, no JS re-renders
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
       <div

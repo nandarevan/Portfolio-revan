@@ -171,7 +171,7 @@
   50% { background-position: 100% 50%; }
 }
 
-/* Ambient background gradient blobs — optimized for GPU */
+/* Ambient background gradient blobs: optimized for GPU */
 .ambient-blob {
   position: absolute;
   border-radius: 50%;

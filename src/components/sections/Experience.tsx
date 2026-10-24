@@ -14,7 +14,7 @@ export default function Experience() {
           subtitle="Exploring innovation through collaboration and real-world impact"
         />
 
-        {/* Simple stacked cards — no timeline to avoid layout bugs */}
+        {/* Simple stacked cards without timeline to avoid layout bugs */}
         <div className="flex flex-col gap-8">
           {experienceData.map((exp, index) => (
             <motion.div
@@ -26,7 +26,7 @@ export default function Experience() {
             >
               <div className="glass-card overflow-hidden group transition-all duration-300 hover:border-blue-500/30 hover:shadow-[0_0_40px_rgba(59,130,246,0.08)] hover:-translate-y-1">
                 <div className="flex flex-col md:flex-row">
-                  {/* Image — uses object-contain on white bg for logos, object-cover for photos */}
+                  {/* Image: uses object-contain on white bg for logos, object-cover for photos */}
                   <div className="md:w-[280px] lg:w-[320px] flex-shrink-0 overflow-hidden relative bg-slate-900/80">
                     <img
                       src={exp.image}
@@ -45,7 +45,7 @@ export default function Experience() {
                       <span className="text-blue-400 text-sm font-mono font-medium">{exp.duration}</span>
                     </div>
                     <h3 className="text-xl font-bold text-white mb-1">
-                      {exp.role} — {exp.company}
+                      {exp.role} at {exp.company}
                     </h3>
                     <p className="text-slate-300 text-sm sm:text-base leading-[1.8] text-justify mt-3">
                       {exp.description}

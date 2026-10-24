@@ -62,7 +62,7 @@ export const experienceData: Experience[] = [
   {
     role: 'Frontend Developer',
     company: 'PT. Alfa Electra Indonesia',
-    duration: 'Jul 2026 – Present',
+    duration: 'Jul 2026 to Present',
     description:
       'Working as a Frontend Developer at PT Alfa Electra Indonesia, responsible for building and maintaining the Electra Integrated System (EIS) using React.js, Vite, and Tailwind CSS. Developing responsive user interfaces, integrating REST APIs, and streamlining enterprise operations across manufacturing, supply chain, and procurement.',
     image: '/images/alfaelectra.jpeg',
@@ -70,15 +70,15 @@ export const experienceData: Experience[] = [
   {
     role: 'Full Stack Developer Intern',
     company: 'Institut Teknologi PLN',
-    duration: 'Sep 2026 – Present',
+    duration: 'Sep 2026 to Present',
     description:
       'Worked as a Full Stack Developer Intern at ITPLN, contributing to frontend and backend development using PHP and Laravel. Developed an ERP system using PHP to support business process management and improve internal operations.',
     image: '/images/itpln1.jpg',
   },
   {
-    role: 'Full Stack Developer - Student Worker',
+    role: 'Full Stack Developer (Student Worker)',
     company: 'Institut Teknologi PLN',
-    duration: 'Dec 2025 – Aug 2026',
+    duration: 'Dec 2025 to Aug 2026',
     description:
       'Worked as a Full Stack Developer at ITPLN, handling both frontend and backend development tasks to support digital business initiatives. Designed and built the STP ITPLN website using Laravel, improving digital presence, user engagement, and overall system performance, as well as developing the Usahakerjasama website using Native PHP for business collaboration and information management purposes.',
     image: '/images/itpln1.jpg',
@@ -94,7 +94,7 @@ export const experienceData: Experience[] = [
   {
     role: 'Internship',
     company: 'PT. Rajawali Konsulindo',
-    duration: 'Apr 2022 – Jun 2022',
+    duration: 'Apr 2022 to Jun 2022',
     description:
       'Gained hands-on experience in web development and database management. Assisted in building the Ourtoga GAFRS FRAC website, collaborating with a development team and applying technical knowledge in real-world project execution.',
     image: '/images/pt_rajawali.jpg',
@@ -173,6 +173,15 @@ export const projectsData: Project[] = [
     image: '/images/porto9.jpg',
     tech: ['Go (Gin)', 'React', 'JavaScript'],
     link: 'https://github.com/nandarevan/Portofolio-Golang',
+  },
+  {
+    id: 9,
+    title: 'Website ChangesPDF',
+    description:
+      'Engineered with Next.js and Python, ChangesPDF provides a fast and secure platform for converting, merging, and compressing documents. The application features instant data processing, complete user privacy, and bilingual support for an optimal user experience.',
+    image: '/images/porto10.png',
+    tech: ['Next.js', 'Python', 'TypeScript', 'Tailwind CSS'],
+    link: 'https://changespdf.vercel.app/',
   },
 ];
 
@@ -269,7 +278,7 @@ export const contactInfo: ContactInfo[] = [
   {
     icon: 'Phone',
     label: 'Phone',
-    value: '+62 899-7384-624',
+    value: '+62 899 7384 624',
     href: 'https://wa.me/+628997384624',
     isExternal: true,
   },
@@ -369,7 +378,11 @@ export const carouselData = projectsData.map((p) => ({
                 ? 'A machine learning model that predicts house prices based on features like location, size, and condition.'
                 : p.id === 7
                   ? 'A mobile application featuring Quran, Hadith, prayer times, and Qibla direction with a clean and user-friendly interface.'
-                  : 'A full-stack system combining Go Gin framework and React for building scalable web architectures.',
+                  : p.id === 8
+                    ? 'A full-stack system combining Go Gin framework and React for building scalable web architectures.'
+                    : p.id === 9
+                      ? 'Built with Next.js and Python to convert, compress, and manage digital documents securely.'
+                      : p.description,
   image: p.image,
   tech:
     p.id === 2

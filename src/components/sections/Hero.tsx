@@ -166,7 +166,7 @@ export default function Hero() {
                     onClick={scrollToProjects}
                   >
                     <div className="absolute top-4 right-5 text-5xl sm:text-6xl font-bold text-blue-500/10 font-mono">
-                      0{item.id}
+                      {item.id < 10 ? `0${item.id}` : item.id}
                     </div>
                     <div className="w-full h-[140px] sm:h-[160px] md:h-[180px] rounded-xl overflow-hidden mb-4 border border-blue-500/10">
                       <img
