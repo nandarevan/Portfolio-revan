@@ -11,7 +11,7 @@ export default function Experience() {
       <div className="relative z-10 max-w-5xl mx-auto">
         <SectionHeader
           title="Professional Experience"
-          subtitle="Exploring innovation through collaboration and real-world impact"
+          subtitle="Exploring innovation through collaboration and real world impact"
         />
 
         {/* Simple stacked cards without timeline to avoid layout bugs */}

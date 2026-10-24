@@ -51,8 +51,8 @@ export const aboutData = {
   name: 'Nanda Revan Saputro',
   title: 'AI & Full Stack Developer',
   paragraphs: [
-    "I'm a 21 years old 7th-semester Informatics Engineering student at Institut Teknologi PLN with a GPA of 3.96. Passionate about Artificial Intelligence and software development, I combine creativity and logic to craft impactful digital solutions that merge innovation and practicality.",
-    "Driven by curiosity and vision, I build intelligent systems, web platforms, and AI-powered solutions that bridge technology and creativity. My goal is to create systems that not only work but also inspire.",
+    "I'm a 21 years old 7th semester Informatics Engineering student at Institut Teknologi PLN with a GPA of 3.96. Passionate about Artificial Intelligence and software development, I combine creativity and logic to craft impactful digital solutions that merge innovation and practicality.",
+    "Driven by curiosity and vision, I build intelligent systems, web platforms, and AI powered solutions that bridge technology and creativity. My goal is to create systems that not only work but also inspire.",
   ],
   quote: '\u201CInnovation isn\u2019t luck. It\u2019s the result of focus, persistence, and curiosity.\u201D',
   photo: '/images/revan.jpg',
@@ -88,7 +88,7 @@ export const experienceData: Experience[] = [
     company: 'Icon Plus PLN Cawang',
     duration: 'February 2026',
     description:
-      'Created data visualizations to support network monitoring and operational insights at Icon Plus PLN Cawang. Processed and analyzed operational data to help teams understand patterns, improve reporting, and support data-driven decision making.',
+      'Created data visualizations to support network monitoring and operational insights at Icon Plus PLN Cawang. Processed and analyzed operational data to help teams understand patterns, improve reporting, and support data driven decision making.',
     image: '/images/iconplus.png',
   },
   {
@@ -96,7 +96,7 @@ export const experienceData: Experience[] = [
     company: 'PT. Rajawali Konsulindo',
     duration: 'Apr 2022 - Jun 2022',
     description:
-      'Gained hands-on experience in web development and database management. Assisted in building the Ourtoga GAFRS FRAC website, collaborating with a development team and applying technical knowledge in real-world project execution.',
+      'Gained hands on experience in web development and database management. Assisted in building the Ourtoga GAFRS FRAC website, collaborating with a development team and applying technical knowledge in real world project execution.',
     image: '/images/pt_rajawali.jpg',
   },
 ];
@@ -106,7 +106,7 @@ export const projectsData: Project[] = [
     id: 1,
     title: 'Website Technopark ITPLN',
     description:
-      'A Laravel-based website designed to manage Technopark IT PLN\u2019s operations, events, and collaborations. This platform improves internal coordination, enhances service visibility, and provides a centralized system for innovation management.',
+      'A Laravel based website designed to manage Technopark IT PLN\u2019s operations, events, and collaborations. This platform improves internal coordination, enhances service visibility, and provides a centralized system for innovation management.',
     image: '/images/porto1.jpg',
     tech: ['Laravel', 'JavaScript', 'PHP', 'SQL'],
     link: 'https://technopark.itpln.ac.id/',
@@ -124,7 +124,7 @@ export const projectsData: Project[] = [
     id: 3,
     title: 'Electra Integrated System (EIS)',
     description:
-      'An enterprise resource planning (ERP) system designed for PT Alfa Electra Indonesia to streamline end-to-end manufacturing, supply chain management, procurement, and project monitoring.',
+      'An enterprise resource planning (ERP) system designed for PT Alfa Electra Indonesia to streamline end to end manufacturing, supply chain management, procurement, and project monitoring.',
     image: '/images/porto3.png',
     tech: ['React.js', 'Vite', 'Tailwind CSS', 'JavaScript', 'REST API'],
     link: 'https://www.alfaelectra.co.id/',
@@ -142,7 +142,7 @@ export const projectsData: Project[] = [
     id: 5,
     title: 'Face Detection & Recognition',
     description:
-      'Real-time facial recognition system using OpenCV and deep neural networks for automatic identity verification and access control solutions.',
+      'Real time facial recognition system using OpenCV and deep neural networks for automatic identity verification and access control solutions.',
     image: '/images/porto5.jpg',
     tech: ['Python', 'OpenCV', 'TensorFlow'],
     link: 'https://github.com/nandarevan/Face_Recognition_DeepFace',
@@ -151,9 +151,9 @@ export const projectsData: Project[] = [
     id: 6,
     title: 'House Price Prediction',
     description:
-      'A regression-based machine learning model predicting house prices based on area, location, and condition, built using Scikit-learn and Pandas.',
+      'A regression based machine learning model predicting house prices based on area, location, and condition, built using Scikit learn and Pandas.',
     image: '/images/porto6.png',
-    tech: ['Python', 'Scikit-learn', 'Pandas'],
+    tech: ['Python', 'Scikit learn', 'Pandas'],
     link: 'https://github.com/nandarevan/Analyzed-customer-sales',
   },
   {
@@ -169,7 +169,7 @@ export const projectsData: Project[] = [
     id: 8,
     title: 'First Experience With Golang',
     description:
-      'A full-stack system combining the Go Gin framework and React for building efficient, scalable web architectures, with a focus on structured APIs and reactive front-end rendering.',
+      'A full stack system combining the Go Gin framework and React for building efficient, scalable web architectures, with a focus on structured APIs and reactive front end rendering.',
     image: '/images/porto9.jpg',
     tech: ['Go (Gin)', 'React', 'JavaScript'],
     link: 'https://github.com/nandarevan/Portofolio-Golang',
@@ -197,7 +197,7 @@ export const skillsData: SkillCategory[] = [
       'Bootstrap',
       'Responsive Web Design',
       'UI Implementation',
-      'Cross-browser Compatibility',
+      'Cross browser Compatibility',
     ],
   },
   {
@@ -285,7 +285,7 @@ export const contactInfo: ContactInfo[] = [
   {
     icon: 'Linkedin',
     label: 'LinkedIn',
-    value: 'linkedin.com/in/nanda-revan-saputro-3b89ab284',
+    value: 'Nanda Revan Saputro',
     href: 'https://www.linkedin.com/in/nanda-revan-saputro-3b89ab284/',
     isExternal: true,
   },
@@ -365,21 +365,21 @@ export const carouselData = projectsData.map((p) => ({
   title: p.title,
   description:
     p.id === 1
-      ? 'A Laravel-based website for managing Technopark IT PLN activities and services.'
+      ? 'A Laravel based website for managing Technopark IT PLN activities and services.'
       : p.id === 2
         ? 'A website for IT PLN\u2019s business collaboration platform, where I focused on developing the digital signature feature and related functionalities.'
         : p.id === 3
           ? 'An enterprise ERP system for PT Alfa Electra Indonesia streamlining manufacturing, supply chain, and procurement.'
           : p.id === 4
-            ? 'Machine learning model for real-time classification of clean and messy data.'
+            ? 'Machine learning model for real time classification of clean and messy data.'
             : p.id === 5
-              ? 'AI system for real-time face detection and recognition using computer vision.'
+              ? 'AI system for real time face detection and recognition using computer vision.'
               : p.id === 6
                 ? 'A machine learning model that predicts house prices based on features like location, size, and condition.'
                 : p.id === 7
-                  ? 'A mobile application featuring Quran, Hadith, prayer times, and Qibla direction with a clean and user-friendly interface.'
+                  ? 'A mobile application featuring Quran, Hadith, prayer times, and Qibla direction with a clean and user friendly interface.'
                   : p.id === 8
-                    ? 'A full-stack system combining Go Gin framework and React for building scalable web architectures.'
+                    ? 'A full stack system combining Go Gin framework and React for building scalable web architectures.'
                     : p.id === 9
                       ? 'Built with Next.js and Python to convert, compress, and manage digital documents securely.'
                       : p.description,
