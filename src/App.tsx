@@ -8,6 +8,7 @@ import Projects from './components/sections/Projects';
 import Achievements from './components/sections/Achievements';
 import Skills from './components/sections/Skills';
 import Contact from './components/sections/Contact';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
@@ -41,6 +42,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer theme={theme} />
+      <Analytics />
     </div>
   );
 }

@@ -62,7 +62,7 @@ export const experienceData: Experience[] = [
   {
     role: 'Frontend Developer',
     company: 'PT. Alfa Electra Indonesia',
-    duration: 'Jul 2026 to Present',
+    duration: 'Jul 2026 - Present',
     description:
       'Working as a Frontend Developer at PT Alfa Electra Indonesia, responsible for building and maintaining the Electra Integrated System (EIS) using React.js, Vite, and Tailwind CSS. Developing responsive user interfaces, integrating REST APIs, and streamlining enterprise operations across manufacturing, supply chain, and procurement.',
     image: '/images/alfaelectra.jpeg',
@@ -70,7 +70,7 @@ export const experienceData: Experience[] = [
   {
     role: 'Full Stack Developer Intern',
     company: 'Institut Teknologi PLN',
-    duration: 'Sep 2026 to Present',
+    duration: 'Sep 2026 - Present',
     description:
       'Worked as a Full Stack Developer Intern at ITPLN, contributing to frontend and backend development using PHP and Laravel. Developed an ERP system using PHP to support business process management and improve internal operations.',
     image: '/images/itpln1.jpg',
@@ -78,7 +78,7 @@ export const experienceData: Experience[] = [
   {
     role: 'Full Stack Developer (Student Worker)',
     company: 'Institut Teknologi PLN',
-    duration: 'Dec 2025 to Aug 2026',
+    duration: 'Dec 2025 - Aug 2026',
     description:
       'Worked as a Full Stack Developer at ITPLN, handling both frontend and backend development tasks to support digital business initiatives. Designed and built the STP ITPLN website using Laravel, improving digital presence, user engagement, and overall system performance, as well as developing the Usahakerjasama website using Native PHP for business collaboration and information management purposes.',
     image: '/images/itpln1.jpg',
@@ -94,7 +94,7 @@ export const experienceData: Experience[] = [
   {
     role: 'Internship',
     company: 'PT. Rajawali Konsulindo',
-    duration: 'Apr 2022 to Jun 2022',
+    duration: 'Apr 2022 - Jun 2022',
     description:
       'Gained hands-on experience in web development and database management. Assisted in building the Ourtoga GAFRS FRAC website, collaborating with a development team and applying technical knowledge in real-world project execution.',
     image: '/images/pt_rajawali.jpg',
