@@ -60,20 +60,20 @@ export const aboutData = {
 
 export const experienceData: Experience[] = [
   {
-    role: 'Frontend Developer',
-    company: 'PT. Alfa Electra Indonesia',
-    duration: 'Jul 2026 - Present',
-    description:
-      'Working as a Frontend Developer at PT Alfa Electra Indonesia, responsible for building and maintaining the Electra Integrated System (EIS) using React.js, Vite, and Tailwind CSS. Developing responsive user interfaces, integrating REST APIs, and streamlining enterprise operations across manufacturing, supply chain, and procurement.',
-    image: '/images/alfaelectra.jpeg',
-  },
-  {
     role: 'Full Stack Developer Intern',
     company: 'Institut Teknologi PLN',
     duration: 'Sep 2026 - Present',
     description:
-      'Worked as a Full Stack Developer Intern at ITPLN, contributing to frontend and backend development using PHP and Laravel. Developed an ERP system using PHP to support business process management and improve internal operations.',
+      'Working as a Full Stack Developer Intern at ITPLN, contributing to frontend and backend development using PHP and Laravel. Developed an ERP system using PHP to support business process management and improve internal operations.',
     image: '/images/itpln1.jpg',
+  },
+  {
+    role: 'Frontend Developer',
+    company: 'PT. Alfa Electra Indonesia',
+    duration: 'Jul 2026 - Sep 2026',
+    description:
+      'Worked as a Frontend Developer at PT Alfa Electra Indonesia, responsible for building and maintaining the Electra Integrated System (EIS) using React.js, Vite, and Tailwind CSS. Developing responsive user interfaces, integrating REST APIs, and streamlining enterprise operations across manufacturing, supply chain, and procurement.',
+    image: '/images/alfaelectra.jpeg',
   },
   {
     role: 'Full Stack Developer (Student Worker)',
