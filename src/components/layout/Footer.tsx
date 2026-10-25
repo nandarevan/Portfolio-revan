@@ -49,7 +49,7 @@ export default function Footer({ theme }: FooterProps) {
               <img src={theme === 'light' ? '/images/logorevan_3.png' : '/images/logorevan_1.png'} alt="Logo" className="w-[60px]" />
               <span className="text-lg font-bold gradient-text-static">Nanda Revan Saputro</span>
             </div>
-            <p className="text-slate-400 text-sm leading-relaxed mb-5 max-w-[300px]">
+            <p className="text-slate-400 text-sm leading-relaxed mb-5 max-w-[300px] text-justify">
               AI & Full Stack Developer passionate about creating intelligent solutions that bridge technology and creativity. Turning complex challenges into innovative digital experiences.
             </p>
             <div className="flex gap-3">
@@ -70,9 +70,9 @@ export default function Footer({ theme }: FooterProps) {
 
           {/* Services */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }}>
-            <h4 className="text-white font-semibold mb-5 relative pb-2">
+            <h4 className="text-white font-semibold mb-5 relative pb-2 w-fit">
               Services
-              <span className="absolute bottom-0 left-0 w-8 h-[2px] bg-gradient-to-r from-blue-500 to-cyan-400 rounded" />
+              <span className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-blue-500 to-cyan-400 rounded" />
             </h4>
             <div className="flex flex-col gap-3">
               {footerServices.map((item) => (
@@ -85,9 +85,9 @@ export default function Footer({ theme }: FooterProps) {
 
           {/* Quick Links */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }}>
-            <h4 className="text-white font-semibold mb-5 relative pb-2">
+            <h4 className="text-white font-semibold mb-5 relative pb-2 w-fit">
               Quick Links
-              <span className="absolute bottom-0 left-0 w-8 h-[2px] bg-gradient-to-r from-blue-500 to-cyan-400 rounded" />
+              <span className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-blue-500 to-cyan-400 rounded" />
             </h4>
             <div className="flex flex-col gap-3">
               {footerQuickLinks.map((item) => (
@@ -100,9 +100,9 @@ export default function Footer({ theme }: FooterProps) {
 
           {/* Technologies */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }}>
-            <h4 className="text-white font-semibold mb-5 relative pb-2">
+            <h4 className="text-white font-semibold mb-5 relative pb-2 w-fit">
               Technologies
-              <span className="absolute bottom-0 left-0 w-8 h-[2px] bg-gradient-to-r from-blue-500 to-cyan-400 rounded" />
+              <span className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-blue-500 to-cyan-400 rounded" />
             </h4>
             <div className="flex flex-col gap-3">
               {footerTechnologies.map((item) => (
@@ -170,7 +170,7 @@ export default function Footer({ theme }: FooterProps) {
                 <X size={18} />
               </button>
               <h3 className="text-xl font-bold mb-3 gradient-text-static">{modalContent.title}</h3>
-              <p className="text-sm text-slate-300 leading-relaxed mb-6">{modalContent.body}</p>
+              <p className="text-sm text-slate-300 leading-relaxed mb-6 text-justify">{modalContent.body}</p>
               <button
                 onClick={() => setModalContent(null)}
                 className="btn-primary text-sm py-2.5 px-5 w-full cursor-pointer"

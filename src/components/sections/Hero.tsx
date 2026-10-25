@@ -179,7 +179,7 @@ export default function Hero() {
                     <h3 className="text-lg sm:text-xl font-bold mb-2 gradient-text-static leading-snug">
                       {item.title}
                     </h3>
-                    <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4 flex-1 line-clamp-3">
+                    <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4 flex-1 line-clamp-3 text-justify">
                       {item.description}
                     </p>
                     <div className="flex flex-wrap gap-1.5 mb-3">
