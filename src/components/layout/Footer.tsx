@@ -117,7 +117,7 @@ export default function Footer({ theme }: FooterProps) {
         {/* Bottom bar */}
         <div className="border-t border-white/5 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-slate-500">
           <div>
-            &copy; 2026 Portofolio. Created by <span className="font-semibold text-slate-200">Nanda Revan Saputro</span>. All rights reserved.
+            &copy; 2024 Portofolio. Created by <span className="font-semibold text-slate-200">Nanda Revan Saputro</span>. All rights reserved.
           </div>
           <div className="flex items-center gap-5 sm:gap-6 text-xs sm:text-sm">
             <button
