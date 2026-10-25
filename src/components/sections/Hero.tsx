@@ -162,10 +162,10 @@ export default function Hero() {
                     style={{ transformStyle: 'preserve-3d', transformOrigin: 'center center' }}
                   >
                   <div
-                    className="glass-card p-5 sm:p-6 cursor-pointer h-[360px] sm:h-[400px] md:h-[440px] flex flex-col"
+                    className="glass-card p-5 sm:p-6 cursor-pointer h-[360px] sm:h-[400px] md:h-[440px] flex flex-col relative overflow-hidden"
                     onClick={scrollToProjects}
                   >
-                    <div className="absolute top-4 right-5 text-5xl sm:text-6xl font-bold text-blue-500/10 font-mono">
+                    <div className="absolute top-3 right-4 sm:top-4 sm:right-5 text-5xl sm:text-6xl font-bold text-blue-600/50 dark:text-blue-400/35 font-mono z-10 pointer-events-none select-none drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
                       {item.id < 10 ? `0${item.id}` : item.id}
                     </div>
                     <div className="w-full h-[140px] sm:h-[160px] md:h-[180px] rounded-xl overflow-hidden mb-4 border border-blue-500/10">
