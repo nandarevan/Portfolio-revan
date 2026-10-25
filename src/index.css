@@ -407,6 +407,31 @@ html:not(.dark) footer h4 {
   color: #0f172a !important;
 }
 
+/* Footer social buttons in light mode: black circle with white icon */
+html:not(.dark) .footer-social-link {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+html:not(.dark) .footer-social-link svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+html:not(.dark) .footer-social-link:hover {
+  background-color: #1e293b !important;
+  border-color: #1e293b !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35) !important;
+}
+
+html:not(.dark) .footer-social-link:hover svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
 /* Mobile menu container */
 html:not(.dark) .lg\:hidden.bg-navy-950\/98 {
   background-color: rgba(248, 250, 252, 0.98) !important;

@@ -48,7 +48,14 @@ export default function Footer({ theme }: FooterProps) {
             </p>
             <div className="flex gap-3">
               {socialLinks.map((link) => (
-                <a key={link.name} href={link.href} target={link.href.startsWith('http') ? '_blank' : undefined} rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined} title={link.name} className="w-9 h-9 rounded-full bg-navy-800/50 border border-blue-500/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-blue-500/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-[0_5px_15px_rgba(59,130,246,0.3)] transition-all duration-300 no-underline">
+                <a
+                  key={link.name}
+                  href={link.href}
+                  target={link.href.startsWith('http') ? '_blank' : undefined}
+                  rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  title={link.name}
+                  className="footer-social-link w-9 h-9 rounded-full bg-navy-800/50 border border-blue-500/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-blue-500/20 hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-[0_5px_15px_rgba(59,130,246,0.3)] transition-all duration-300 no-underline"
+                >
                   {iconMap[link.icon]}
                 </a>
               ))}
