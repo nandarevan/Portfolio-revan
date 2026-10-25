@@ -432,6 +432,36 @@ html:not(.dark) .footer-social-link:hover svg {
   stroke: #ffffff !important;
 }
 
+/* Footer bottom bar in light mode */
+html:not(.dark) footer .border-t {
+  border-color: rgba(59, 130, 246, 0.1) !important;
+}
+
+html:not(.dark) footer .border-t,
+html:not(.dark) footer .border-t div,
+html:not(.dark) footer .border-t button {
+  color: #64748b !important;
+}
+
+html:not(.dark) footer .border-t span.font-semibold {
+  color: #0f172a !important;
+}
+
+html:not(.dark) footer .border-t button:hover {
+  color: #2563eb !important;
+}
+
+html:not(.dark) .footer-modal-card {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: rgba(59, 130, 246, 0.2) !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2) !important;
+}
+
+html:not(.dark) .footer-modal-card p {
+  color: #475569 !important;
+}
+
 /* Mobile menu container */
 html:not(.dark) .lg\:hidden.bg-navy-950\/98 {
   background-color: rgba(248, 250, 252, 0.98) !important;

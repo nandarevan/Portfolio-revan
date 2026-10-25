@@ -1,5 +1,6 @@
-import { motion } from 'framer-motion';
-import { Linkedin, Github, Instagram, Music2, Mail, Phone, Heart } from 'lucide-react';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Linkedin, Github, Instagram, Music2, Mail, Phone, X } from 'lucide-react';
 import { socialLinks, footerServices, footerQuickLinks, footerTechnologies } from '../../data/portfolioData';
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -16,6 +17,11 @@ interface FooterProps {
 }
 
 export default function Footer({ theme }: FooterProps) {
+  const [modalContent, setModalContent] = useState<{ title: string; body: string } | null>(null);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   const handleLinkClick = (e: React.MouseEvent, href: string) => {
     if (href.startsWith('#')) {
       e.preventDefault();
@@ -109,13 +115,72 @@ export default function Footer({ theme }: FooterProps) {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
-          <span>&copy; 2024 Nanda Revan Saputro. All rights reserved.</span>
-          <span className="flex items-center gap-1.5">
-            Built with passion and <Heart size={14} className="text-blue-400 fill-blue-400" />
-          </span>
+        <div className="border-t border-white/5 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-slate-500">
+          <div>
+            &copy; 2026 Portofolio. Created by <span className="font-semibold text-slate-200">Nanda Revan Saputro</span>. All rights reserved.
+          </div>
+          <div className="flex items-center gap-5 sm:gap-6 text-xs sm:text-sm">
+            <button
+              onClick={() =>
+                setModalContent({
+                  title: 'Privacy Policy',
+                  body: 'This portfolio website is a personal showcase. It does not collect or track any personal identification data. Inquiries sent via the contact form are used exclusively for direct professional correspondence.',
+                })
+              }
+              className="text-slate-400 hover:text-blue-400 transition-colors duration-200 cursor-pointer"
+            >
+              Privacy Policy
+            </button>
+            <button
+              onClick={() =>
+                setModalContent({
+                  title: 'Terms & Conditions',
+                  body: 'All projects, code samples, design assets, and content displayed on this website are part of the professional portfolio of Nanda Revan Saputro. All rights reserved.',
+                })
+              }
+              className="text-slate-400 hover:text-blue-400 transition-colors duration-200 cursor-pointer"
+            >
+              Terms & Conditions
+            </button>
+            <button
+              onClick={scrollToTop}
+              className="text-slate-400 hover:text-blue-400 transition-colors duration-200 cursor-pointer inline-flex items-center gap-1"
+            >
+              Back to Top &uarr;
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* Info Modal */}
+      <AnimatePresence>
+        {modalContent && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 10 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 10 }}
+              className="footer-modal-card glass-card max-w-md w-full p-6 relative rounded-2xl shadow-2xl border border-blue-500/20 bg-navy-950/95 text-white"
+            >
+              <button
+                onClick={() => setModalContent(null)}
+                className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors cursor-pointer"
+                aria-label="Close"
+              >
+                <X size={18} />
+              </button>
+              <h3 className="text-xl font-bold mb-3 gradient-text-static">{modalContent.title}</h3>
+              <p className="text-sm text-slate-300 leading-relaxed mb-6">{modalContent.body}</p>
+              <button
+                onClick={() => setModalContent(null)}
+                className="btn-primary text-sm py-2.5 px-5 w-full cursor-pointer"
+              >
+                Close
+              </button>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </footer>
   );
 }

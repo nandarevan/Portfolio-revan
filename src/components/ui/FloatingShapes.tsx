@@ -2,6 +2,7 @@ export default function FloatingShapes() {
   // Pure CSS animations: no Framer Motion overhead, no JS re-renders
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
+      {/* Left Cube */}
       <div
         className="absolute w-[50px] h-[50px] opacity-[0.06] animate-float"
         style={{
@@ -10,10 +11,19 @@ export default function FloatingShapes() {
           background: 'linear-gradient(135deg, #3b82f6, #06b6d4)',
         }}
       />
+      {/* Right Cube */}
+      <div
+        className="absolute w-[50px] h-[50px] opacity-[0.06] animate-float-delayed"
+        style={{
+          left: '85%', top: '22%',
+          clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
+          background: 'linear-gradient(135deg, #06b6d4, #3b82f6)',
+        }}
+      />
       <div
         className="absolute w-[35px] h-[35px] rounded-full opacity-[0.05] animate-float-slow"
         style={{
-          left: '82%', top: '18%',
+          left: '80%', top: '60%',
           border: '1px solid rgba(59,130,246,0.2)',
           background: 'rgba(6,182,212,0.05)',
         }}
