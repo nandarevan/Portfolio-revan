@@ -183,6 +183,24 @@ export const projectsData: Project[] = [
     tech: ['Next.js', 'Python', 'TypeScript', 'Tailwind CSS'],
     link: 'https://changespdf.vercel.app/',
   },
+  {
+    id: 10,
+    title: 'Website AnySaveVid',
+    description:
+      'Engineered with React and Python, AnySaveVid provides a fast and reliable platform for downloading, extracting, and saving media. The application features instant media processing, multi platform compatibility, and bilingual support for an optimal user experience.',
+    image: '/images/porto11.png',
+    tech: ['React', 'Python', 'TypeScript', 'Tailwind CSS'],
+    link: 'https://anysavevid.vercel.app/',
+  },
+  {
+    id: 11,
+    title: 'Website MyQR Make',
+    description:
+      'Engineered with Next.js and TypeScript, MyQR Make provides a sleek platform for designing, customizing, and exporting QR codes. The application features custom logo positioning, complete user privacy, and bilingual support for an optimal user experience.',
+    image: '/images/porto12.png',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'HTML5 Canvas'],
+    link: 'https://myqrmake.vercel.app/',
+  },
 ];
 
 export const skillsData: SkillCategory[] = [
@@ -382,7 +400,11 @@ export const carouselData = projectsData.map((p) => ({
                     ? 'A full stack system combining Go Gin framework and React for building scalable web architectures.'
                     : p.id === 9
                       ? 'Built with Next.js and Python to convert, compress, and manage digital documents securely.'
-                      : p.description,
+                      : p.id === 10
+                        ? 'Built with React and Python to download, process, and save social media seamlessly.'
+                        : p.id === 11
+                          ? 'Built with Next.js and TypeScript to generate, customize, and export QR codes securely.'
+                          : p.description,
   image: p.image,
   tech:
     p.id === 2
