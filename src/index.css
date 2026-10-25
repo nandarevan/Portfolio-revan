@@ -407,12 +407,12 @@ html:not(.dark) footer h4 {
   color: #0f172a !important;
 }
 
-/* Footer social buttons in light mode: black circle with white icon */
+/* Footer social buttons in light mode: match text color of footer paragraph with white icon */
 html:not(.dark) .footer-social-link {
-  background-color: #000000 !important;
-  border-color: #000000 !important;
+  background-color: #475569 !important;
+  border-color: #475569 !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0 3px 10px rgba(71, 85, 105, 0.2) !important;
 }
 
 html:not(.dark) .footer-social-link svg {
@@ -421,10 +421,10 @@ html:not(.dark) .footer-social-link svg {
 }
 
 html:not(.dark) .footer-social-link:hover {
-  background-color: #1e293b !important;
-  border-color: #1e293b !important;
+  background-color: #334155 !important;
+  border-color: #334155 !important;
   color: #ffffff !important;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35) !important;
+  box-shadow: 0 5px 15px rgba(51, 65, 85, 0.3) !important;
 }
 
 html:not(.dark) .footer-social-link:hover svg {
