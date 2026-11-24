@@ -159,12 +159,12 @@ export const projectsData: Project[] = [
   },
   {
     id: 8,
-    title: 'First Experience With Golang',
+    title: 'READY - E-commerce System',
     description:
-      'A full stack system combining the Go Gin framework and React for building efficient, scalable web architectures, with a focus on structured APIs and reactive front end rendering.',
-    image: '/images/porto9.jpg',
-    tech: ['Go (Gin)', 'React', 'JavaScript'],
-    link: 'https://github.com/nandarevan/Portofolio-Golang',
+      'A full stack e-commerce system combining the Go Fiber framework and React with TypeScript for building efficient, high concurrency web architectures, with a focus on structured REST APIs, real time updates, and responsive frontend rendering.',
+    image: '/images/porto8.png',
+    tech: ['Go (Fiber)', 'React', 'TypeScript', 'PostgreSQL'],
+    link: 'https://github.com/nandarevan/Ready-E-commerce-System',
   },
   {
     id: 9,
@@ -389,7 +389,7 @@ export const carouselData = projectsData.map((p) => ({
                 : p.id === 7
                   ? 'A mobile application featuring Quran, Hadith, prayer times, and Qibla direction with a clean and user friendly interface.'
                   : p.id === 8
-                    ? 'A full stack system combining Go Gin framework and React for building scalable web architectures.'
+                    ? 'A full stack e-commerce system combining Go Fiber and React for building fast, scalable shopping architectures.'
                     : p.id === 9
                       ? 'Built with Next.js and Python to convert, compress, and manage digital documents securely.'
                       : p.id === 10
@@ -406,7 +406,7 @@ export const carouselData = projectsData.map((p) => ({
         : p.id === 4
           ? ['Machine Learning', 'Python', 'Data Preprocessing']
           : p.id === 8
-            ? ['Gin', 'Go', 'JavaScript', 'React']
+            ? ['Fiber', 'Go', 'TypeScript', 'React']
             : p.tech,
 }));
 
