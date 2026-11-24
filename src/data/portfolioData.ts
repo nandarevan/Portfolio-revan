@@ -60,11 +60,11 @@ export const aboutData = {
 
 export const experienceData: Experience[] = [
   {
-    role: 'Full Stack Developer Intern',
+    role: 'Full Stack Developer - Student Worker & Intern',
     company: 'Institut Teknologi PLN',
-    duration: 'Sep 2026 - Present',
+    duration: 'Dec 2025 - Present',
     description:
-      'Working as a Full Stack Developer Intern at ITPLN, contributing to frontend and backend development using PHP and Laravel. Developed an ERP system using PHP to support business process management and improve internal operations.',
+      "Worked as a Full Stack Developer and Intern at ITPLN, managing frontend and backend development to support the institution's digital initiatives. Designed and built the STP ITPLN website using Laravel, developed the Usahakerjasama portal using Native PHP for business collaboration management, and built a PHP based Enterprise Resource Planning system to optimize internal operational processes.",
     image: '/images/itpln1.jpg',
   },
   {
@@ -74,14 +74,6 @@ export const experienceData: Experience[] = [
     description:
       'Worked as a Frontend Developer at PT Alfa Electra Indonesia, responsible for building and maintaining the Electra Integrated System (EIS) using React.js, Vite, and Tailwind CSS. Developing responsive user interfaces, integrating REST APIs, and streamlining enterprise operations across manufacturing, supply chain, and procurement.',
     image: '/images/alfaelectra.jpeg',
-  },
-  {
-    role: 'Full Stack Developer (Student Worker)',
-    company: 'Institut Teknologi PLN',
-    duration: 'Dec 2025 - Aug 2026',
-    description:
-      'Worked as a Full Stack Developer at ITPLN, handling both frontend and backend development tasks to support digital business initiatives. Designed and built the STP ITPLN website using Laravel, improving digital presence, user engagement, and overall system performance, as well as developing the Usahakerjasama website using Native PHP for business collaboration and information management purposes.',
-    image: '/images/itpln1.jpg',
   },
   {
     role: 'Data Visualization Intern',
